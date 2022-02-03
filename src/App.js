@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import DataImg from './components/DataImg';
+import ImgComp from './components/ImgComp';
+import NavComponent from './components/NavComponent';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    <div>
+    <NavComponent />
+    <h1 id='title1' style={{backgroundColor:"red",padding:"5px"}}>ws-jsx</h1>
+    <h2 className='body1' style={{backgroundColor:"olive"}}>go my code</h2>
+    <ImgComp />
+    <DataImg />
+    <footer>phone number : 202020202 </footer>
     </div>
   );
 }
